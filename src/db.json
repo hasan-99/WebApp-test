@@ -1,0 +1,357 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Audi B1",
+            "description": "Compact and stylish, the Audi A1 is perfect for urban adventures.",
+            "price": "24",
+            "image": "../../assets/images/cars/car.jpg",
+            "rating": 3.5,
+            "cartegor": "car"
+        },
+        {
+            "id": 2,
+            "name": "Audi B2",
+            "description": "Experience luxury and performance with the Audi A3.",
+            "price": "34,999.99",
+            "image": "../../assets/images/cars/car.jpg",
+            "rating": 5,
+            "cartegor": "car"
+        },
+        {
+            "id": 3,
+            "name": "Audi",
+            "description": "Sleek and sophisticated, the Audi A4 sets new standards in elegance.",
+            "price": "44,999.99",
+            "image": "../../assets/images/cars/ccar3.jpeg",
+            "rating": 4.2,
+            "cartegor": "car"
+        },
+        {
+            "id": 4,
+            "name": "Audi A",
+            "description": "Elevate your driving experience with the luxurious Audi A6.",
+            "price": "54,999.99",
+            "image": "../../assets/images/cars/car.jpg",
+            "rating": 3,
+            "cartegor": "car"
+        },
+        {
+            "id": 5,
+            "name": "Audi",
+            "description": "Elevate your driving experience with the luxurious Audi A6.",
+            "price": "54,999.99",
+            "image": "../../assets/images/cars/car4.jpeg",
+            "rating": 2,
+            "cartegor": "car"
+        },
+        {
+            "id": 6,
+            "name": "Audi A3",
+            "description": "Elevate your driving experience with the luxurious Audi A6.",
+            "price": "54,999.99",
+            "image": "../../assets/images/cars/car.jpg",
+            "rating": 4,
+            "cartegor": "car"
+        },
+        {
+            "id": 7,
+            "name": "Audi A4",
+            "description": "Elevate your driving experience with the luxurious Audi A6.",
+            "price": "54,999.99",
+            "image": "../../assets/images/cars/car2.jpeg",
+            "rating": 2,
+            "cartegor": "car"
+        },
+        {
+            "id": 8,
+            "name": "Smartphone",
+            "description": "High-performance smartphone with advanced features.",
+            "price": " 599.99",
+            "image": "./assets/images/Smartphone.jpg",
+            "rating": 5,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 9,
+            "name": "Laptop",
+            "description": "Thin and light laptop with powerful specifications.",
+            "price": " 999.99",
+            "image":"../../assets/images/1.jpg",
+            "rating": 4,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 10,
+            "name": "Headphones",
+            "description": "Wireless headphones with noise-canceling technology.",
+            "price": "199.99",
+            "image": "./assets/images/Headphones.jpg",
+            "rating": 3,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 11,
+            "name": "Smartwatch",
+            "description": "Fitness tracker with heart rate monitoring and GPS.",
+            "price": " 149.99",
+            "image": "./assets/images/Smartwatch.jpg",
+            "rating": 2,
+            "category": "Electronics",
+            "availability": false
+        },
+        {
+            "id": 12,
+            "name": "Tablet",
+            "description": "Versatile tablet for work and entertainment.",
+            "price": " 299.99",
+            "image": "./assets/images/Tablet.jpg",
+            "rating": 2,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 13,
+            "name": "Bluetooth Speaker",
+            "description": "Portable speaker with excellent sound quality.",
+            "price": " 79.99",
+            "image": "./assets/images/Bluetooth_Speaker.jpg",
+            "rating": 3,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 14,
+            "name": "Gaming Console",
+            "description": "Next-gen gaming console for immersive gaming experiences.",
+            "price": " 499.99",
+            "image": "./assets/images/Gaming_Console.jpg",
+            "rating": 4,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 15,
+            "name": "Digital Camera",
+            "description": "High-resolution digital camera for capturing memories.",
+            "price": " 399.99",
+            "image": "./assets/images/Digital_Camera.jpg",
+            "rating": 5,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 16,
+            "name": "Wireless Mouse",
+            "description": "Ergonomic wireless mouse for comfortable usage.",
+            "price": " 29.99",
+            "image": "./assets/images/Wireless_Mouse.jpg",
+            "rating": 4,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 17,
+            "name": "External Hard Drive",
+            "description": "High-capacity external hard drive for storing data.",
+            "price": " 129.99",
+            "image": "./assets/images/External_Hard.jpg",
+            "rating": 1,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 18,
+            "name": "Fitness Tracker",
+            "description": "Track your fitness goals with this advanced tracker.",
+            "price": " 79.99",
+            "image": "./assets/images/Fitness_Tracker.png",
+            "rating": 3,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 19,
+            "name": "Smart Home Hub",
+            "description": "Control your smart home devices with this hub.",
+            "price": " 149.99",
+            "image": "./assets/images/Smart_home.png",
+            "rating": 4,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 20,
+            "name": "Wireless Earbuds",
+            "description": "Sleek wireless earbuds with superior sound quality.",
+            "price": " 129.99",
+            "image": "./assets/images/earbuds.jpg",
+            "rating": 2,
+            "category": "Electronics",
+            "availability": false
+        },
+        {
+            "id": 21,
+            "name": "Portable Charger",
+            "description": "Charge your devices on the go with this portable charger.",
+            "price": " 49.99",
+            "image": "./assets/images/Portable_Charger.jpg",
+            "rating": 5,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 22,
+            "name": "Bluetooth Earphones",
+            "description": "Sweatproof Bluetooth earphones for workouts.",
+            "price": " 59.99",
+            "image": "./assets/images/Bluetooth_Earphones.jpg",
+            "rating": 1,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 23,
+            "name": "Wireless Keyboard",
+            "description": "Slim and quiet wireless keyboard for comfortable typing.",
+            "price": " 39.99",
+            "image": "./assets/images/Wireless_Keyboard.jpg",
+            "rating": 2,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 24,
+            "name": "Smart Thermostat",
+            "description": "Programmable thermostat for efficient energy usage.",
+            "price": " 129.99",
+            "image": "./assets/images/Smart_Thermostat.jpg",
+            "rating": 1,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 25,
+            "name": "Wireless Router",
+            "description": "High-speed wireless router for seamless internet connectivity.",
+            "price": " 89.99",
+            "image": "./assets/images/Wireless_Router.jpg",
+            "rating": 5,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 26,
+            "name": "Power Strip",
+            "description": "Surge-protected power strip with multiple outlets.",
+            "price": " 19.99",
+            "image": "./assets/images/Power_Strip.jpg",
+            "rating": 3,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 27,
+            "name": "Wireless Charging Pad",
+            "description": "Charge your smartphone wirelessly with this charging pad.",
+            "price": " 39.99",
+            "image": "./assets/images/Wireless_Charging.jpg",
+            "rating": 4,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 27,
+            "name": "Smart Doorbell",
+            "description": "Monitor your doorstep and communicate with visitors ",
+            "price": "179.99",
+            "image": "./assets/images/Smart_Doorbell.jpg",
+            "rating": 3,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 28,
+            "name": "Robot Vacuum Cleaner",
+            "description": "Effortlessly clean your floors with this intelligent ",
+            "price": "349.99",
+            "image": "./assets/images/Robot_Vacuum.jpg",
+            "rating": 3,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 29,
+            "name": "Wireless Security Camera",
+            "description": "Keep an eye on your home with this wireless",
+            "price": "129.99",
+            "image": "./assets/images/Wireless_Security.jpg",
+            "rating": 4,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 30,
+            "name": "Smart Plug",
+            "description": "Turn your regular appliances into smart devices with this smart plug.",
+            "price": "29.99",
+            "image": "./assets/images/Smart_Plug.jpg",
+            "rating": 2,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 31,
+            "name": "Wireless Speaker",
+            "description": "Enjoy immersive sound quality with this portable wireless speaker.",
+            "price": "99.99",
+            "image": "./assets/images/Wireless_Speaker.jpg",
+            "rating": 5,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 32,
+            "name": "Smart Scale",
+            "description": "Track your weight and body composition with this smart scale.",
+            "price": "49.99",
+            "image": "./assets/images/Smart_Scale.jpg",
+            "rating": 4,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 33,
+            "name": "Wireless Charging Stand",
+            "description": "Charge your smartphone wirelessly with this convenient charging stand.",
+            "price": "39.99",
+            "image": "./assets/images/Wireless_Charging_2.jpg",
+            "rating": 3,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 34,
+            "name": "Smart Mirror",
+            "description": "Upgrade your morning routine with this smart mirror featuring built-in ",
+            "price": "199.99",
+            "image": "./assets/images/Smart_Mirror.jpg",
+            "rating": 3,
+            "category": "Electronics",
+            "availability": true
+        },
+        {
+            "id": 35,
+            "name": "Home Security System",
+            "description": "Protect your home with this comprehensive ",
+            "price": "499.99",
+            "image": "./assets/images/Home_Security.jpg",
+            "rating": 1,
+            "category": "Electronics",
+            "availability": true
+        }
+    ]
+}

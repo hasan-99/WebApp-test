@@ -1,0 +1,24 @@
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Apply the centered placeholder text style only on screens 767px and smaller */
+@media (max-width: 992px) {
+    .text-center-input::placeholder {
+        text-align: center;
+    }
+
+    .text-center-input {
+        text-align: center;
+    }
+}
+
+
+.custom-color {
+    background: #f5eee5;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}

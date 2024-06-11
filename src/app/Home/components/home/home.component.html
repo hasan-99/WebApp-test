@@ -1,0 +1,32 @@
+<div class="custom-color">
+  <div *ngIf="loading" class="loader-container">
+    <app-loader></app-loader>
+  </div>
+
+  <header class="d-flex justify-content-center gap-4 pt-5 flex-wrap">
+    <div class="col-6 col-md-6 col-lg-3 text-center text-lg-start">
+      <p-dropdown [options]="dropdwonOptions" (onChange)="onDropdownChange($event.value)" [filter]="true"
+        filterBy="label" [showClear]="true" appendTo="body" styleClass="shadow w-100" placeholder="Select Sorting Type">
+      </p-dropdown>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3 mb-3 mb-lg-0 text-center text-lg-end">
+      <input type="text" pInputText [(ngModel)]="searchValue" class="w-100 shadow text-center-input"
+        (keyup)="onSearch(searchValue)" placeholder="Search in products">
+    </div>
+  </header>
+
+  <!-- Product List with Pagination for 4 items per page -->
+  <div class="d-flex flex-wrap flex-row justify-content-center mw-100 mt-5">
+    <app-prpdact *ngFor="let product of products | paginate: { itemsPerPage: 5, currentPage: p }" style="padding: 12px"
+      [product]="product"></app-prpdact>
+  </div>
+
+  <!-- Pagination Controls -->
+  <div class="d-flex justify-content-center">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+
+  <div class="text-center mt-3">
+    <button *ngIf="totalProdact > 0" type="button" class="btn btn-success">Checkout</button>
+  </div>
+</div>

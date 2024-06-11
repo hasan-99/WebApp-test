@@ -1,0 +1,50 @@
+<div class="container-fluid background-image d-flex justify-content-center align-items-center ">
+          <div *ngIf="isLoading" class="loader-container">
+                    <app-loader></app-loader>
+          </div>
+
+          <div *ngIf="!isLoading" class="custom-card p-4">
+                    <form [formGroup]="loginForm" (keydown.enter)="submit()">
+                              <div class="text-center text-white ">
+                                        <div *ngIf="isForgotPaasword">
+                                                  <p class="fw-bold fs-5 mt-3  ">Forgot password</p>
+                                                  <p class="fw-light fs-5">Please enter your Email to reset your
+                                                            <span>password</span>
+                                                  </p>
+                                        </div>
+
+                                        <div *ngIf="!isForgotPaasword">
+                                                  <p class="fw-bold fs-5 mt-3  ">Login</p>
+
+                                                  <p class="fw-light fs-5">Please enter your <span>Email</span> and your
+                                                            <span>Password.</span>
+                                                  </p>
+                                        </div>
+                              </div>
+
+                              <div class="col-lg-12 mt-3 p-input-icon-left w-100">
+                                        <i class="pi pi-user"></i>
+                                        <input id="email" class="w-100" type="email" pInputText formControlName="email"
+                                                  placeholder="Email">
+                              </div>
+
+                              <div *ngIf="!isForgotPaasword" class="col-lg-12 mt-3 p-input-icon-left w-100">
+                                        <i class="pi pi-lock"></i>
+                                        <input id="password" class="w-100" type="password" pInputText
+                                                  formControlName="password" placeholder="Password">
+                              </div>
+
+                              <div class=" col-lg-12 mt-3 mt-sm-5">
+                                        <p-button styleClass="w-100 rounded fw-bolder  fs-6" label="Submit" id="Submit"
+                                                  [loading]="isLoading" [disabled]="loginForm.invalid"
+                                                  (click)="submit()"></p-button>
+
+                              </div>
+
+                              <div class="text-end pointer text-white mt-3 mt-sm-4">
+                                        <p *ngIf="!isForgotPaasword" (click)="ForgotPasswors()">Forgot password?</p>
+                                        <p *ngIf="isForgotPaasword" (click)="ForgotPasswors()">Log in.</p>
+                              </div>
+                    </form>
+          </div>
+</div><p-toast class="p-button-success"></p-toast>

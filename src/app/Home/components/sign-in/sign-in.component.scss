@@ -1,0 +1,28 @@
+.background-image {
+          background-image: url('../../../../assets/images/1.jpg');
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+          .background-image {
+                    background-image: url('../../../../assets/images/3.jpg');
+                    background-size: contain;
+                    height: auto;
+                    height: 100vh;
+          }
+}
+
+.custom-card {
+          border: 1px solid rgba(0, 0, 0, 0.125);
+          border-radius: 8px;
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          height: fit-content;
+}
+
+span {
+          color: #f59e0b;
+          font-weight: 600;
+}
