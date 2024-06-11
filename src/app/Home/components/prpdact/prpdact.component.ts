@@ -19,6 +19,7 @@ export class PrpdactComponent implements OnInit {
   ngOnInit() {
   }
 
+  // * The function `getRatingStars` in TypeScript generates an array of numbers representing rating stars based on the input rating.
   getRatingStars(rating: number): number[] {
     return Array.from({ length: rating }, (_, index) => index + 1);
   }

@@ -1,26 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
-import { MessageService } from 'primeng/api';
-import { Router } from '@angular/router';
-import { LoginForm } from '../../core/models/forms/log-in-form';
-import { ValidationPattern } from '../../core/validations/validation.pattern';
-import { AcceptlogIn } from '../../core/models/login/login';
-import { LoaderComponent } from '../loader/loader.component';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { MessageService } from 'primeng/api';
 import { ButtonModule } from "primeng/button";
-import { ToastrModule } from 'ngx-toastr';
 import { InputTextModule } from "primeng/inputtext";
 import { ToastModule } from 'primeng/toast';
-import { ToastService } from '../../core/services/toast.service';
+import { LoginForm } from '../../core/models/forms/log-in-form';
+import { AcceptlogIn } from '../../core/models/login/login';
 import { AuthService } from '../../core/services/auth.service';
+import { ToastService } from '../../core/services/toast.service';
+import { ValidationPattern } from '../../core/validations/validation.pattern';
+import { LoaderComponent } from '../loader/loader.component';
 
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.scss'],
-  // providers: [MessageService, ToastService],
   standalone: true,
-  imports:[ LoaderComponent, ButtonModule, CommonModule, ToastModule, ReactiveFormsModule, InputTextModule]
+  imports: [LoaderComponent, ButtonModule, CommonModule, ToastModule, ReactiveFormsModule, InputTextModule]
 })
 export class SignInComponent implements OnInit {
   loginForm: FormGroup<LoginForm> = this.BuildLoginFrom();
@@ -54,24 +52,22 @@ export class SignInComponent implements OnInit {
 
     const email = this.loginForm.get('email')?.value;
     const password = this.loginForm.get('password')?.value;
-    
+
     this.isLoading = true;
-    debugger
     if (this.authService.login(email!, password!)) {
       this.isLoading = false;
 
       this.messageService.add({ severity: 'success', summary: 'Success', detail: 'You have successfully logged in.' });
       this.naviagteToDashboard();
-    }else{
+    } else {
 
       this.toastService.error('Invalid email or password');
     }
 
-      this.isLoading = false;
+    this.isLoading = false;
   }
 
   private naviagteToDashboard() {
-    debugger
     return this.router.navigate(['auth/home']);
   }
 

@@ -1,4 +1,3 @@
-
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,12 +11,6 @@ import { Product } from '../../core/models/response/products';
 import { HttpService } from '../../core/services/http.service';
 import { LoaderComponent } from '../loader/loader.component';
 import { PrpdactComponent } from '../prpdact/prpdact.component';
-
-const filters = {
-  name: 'Audi',
-  priceRange: { min: 20000, max: 50000 },
-  availability: true
-};
 
 @Component({
   selector: 'app-home',
@@ -36,7 +29,7 @@ export class HomeComponent implements OnInit {
   searchValue: string = '';
   allProducts: Product[] = [];
   selectedSortCriteria: number | null = null;
-  showText: boolean = false; // Initialize showText to false
+
   constructor(private http: HttpService) { }
 
   ngOnInit() {
@@ -85,13 +78,13 @@ export class HomeComponent implements OnInit {
   private applySorting() {
     if (this.selectedSortCriteria !== null) {
       switch (this.selectedSortCriteria) {
-        case 1:
+        case 1: //sort by best rating
           this.sortByBestRating();
           break;
-        case 2:
+        case 2: //sort by lower price
           this.sortByLowerPrice();
           break;
-        case 3:
+        case 3:// sort by higher price
           this.sortByHigherPrice();
           break;
         default:
@@ -102,6 +95,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  // Filters the products based on search keyword and updates the products list.
   private filterProductsByNameOrDescription(products: Product[], keyword: string): Product[] {
     return products.filter(product =>
       product.name.toLowerCase().includes(keyword.toLowerCase()) ||
@@ -120,6 +114,9 @@ export class HomeComponent implements OnInit {
   private sortByHigherPrice() {
     this.products.sort((a, b) => b.price - a.price);
   }
+
+
+  // The `shuffleProducts` function shuffles the elements in the `products` array using the Fisher-Yates algorithm.
 
   private shuffleProducts() {
     for (let i = this.products.length - 1; i > 0; i--) {
